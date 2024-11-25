@@ -1,0 +1,85 @@
+.Page {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/background/music_dark.jpg");
+    background-size: 500% 500%;
+    animation: gradient 360s linear infinite;
+}
+
+.Navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background: #212121;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    /*outline: 2px solid orange;*/
+}
+
+.LoginFields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    /*border: 2px solid blue;*/
+}
+
+.LoginFields input {
+    width: 95%;
+    height: 2rem;
+    /*border: 2px solid red;*/
+}
+
+.Title {
+    display: flex;
+    align-items: center;
+    /*outline: 2px solid red;*/
+}
+
+.Navigation h1, h2, h3 {
+    color: white;
+}
+
+.Title img {
+    width: 60px;
+    height: auto;
+    border-radius: 100rem;
+    padding-right: 10px;
+}
+
+.LoginButton {
+    margin: 10px;
+    /*border: 2px solid green;*/
+}
+
+.usernameBox p, .passwordBox p {
+    width: 30%;
+    color: lightgray;
+    font-size: 12px;
+    text-align: left;
+}
+.usernameBox, .passwordBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 40%;
+    }
+    50% {
+        background-position: 100% 40%;
+    }
+    100% {
+        background-position: 0% 40%;
+    }
+}
